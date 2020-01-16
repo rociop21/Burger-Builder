@@ -1,5 +1,6 @@
 import axios from 'axios';
 import * as actionTypes from './actionTypes';
+import * as Keys from './googleApiKey';
 
 export const logInStart = () => {
     return {
@@ -47,7 +48,7 @@ export const logIn = (email, password) => {
             password: password,
             returnSecureToken: true
         }
-        const url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDOGzGvRKpXhI4GZKd_LrwHNxfkgRyCy9Y';
+        const url = Keys.signInApiKey ;
         axios.post(url, logInData)
             .then(response => {
                 const expirationDate = new Date(new Date().getTime() + response.data.expiresIn * 1000);

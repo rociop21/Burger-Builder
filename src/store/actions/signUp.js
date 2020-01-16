@@ -1,5 +1,6 @@
 import axios from 'axios';
-import * as actionTypes from './actionTypes'
+import * as actionTypes from './actionTypes';
+import * as Keys from './googleApiKey';
 
 export const registerStart = () => {
     return {
@@ -30,7 +31,7 @@ export const register = (email, password) => {
             password: password,
             returnSecureToken: true
         }
-        const url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDOGzGvRKpXhI4GZKd_LrwHNxfkgRyCy9Y';
+        const url = Keys.signUpApiKey ;
         axios.post(url, registerData)
         .then(response => {
             console.log(response);
