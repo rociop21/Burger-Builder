@@ -445,3 +445,70 @@
 .Invalid {
   border: 1px solid red;
 }
+
+.AuthForm input[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+  .AuthForm {
+    width: 100%;
+  }
+}
+
+.AuthForm input[type=text]:focus {
+  outline: 1px solid #7a522c;
+  outline-offset: -1px;
+}
+
+
+.AuthForm {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 90px;
+  border-radius: 5px;
+  background-color: rgb(196, 171, 148);
+  padding: 20px;
+  align-items: center;
+}
+
+.OrderForm {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 90px;
+  border-radius: 5px;
+  background-color: rgb(196, 171, 148);
+  padding: 20px;
+  align-items: center;
+}
+
+.OrderForm div {
+  padding-bottom: 10px;
+}
+
+.OrderForm input[type=text] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+  .OrderForm {
+    width: 100%;
+  }
+}
+
+.OrderForm input[type=text]:focus {
+  outline: 1px solid #7a522c;
+  outline-offset: -1px;
+  }
