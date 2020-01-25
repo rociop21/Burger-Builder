@@ -13,6 +13,7 @@ class SignUp extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
+                    placerholder: 'E-mail adress',
                     label: 'E-mail adress',
                 },
                 value: '',
@@ -26,7 +27,8 @@ class SignUp extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    label: 'Password',
+                    placerholder: 'password',
+                    label: 'password',
                 },
                 value: '',
                 rules: {
@@ -137,7 +139,7 @@ class SignUp extends Component {
         }
 
         return (
-            <div className='AuthForm' >
+            <div>
                 {registerRedirect}
                 {errorMessage}
                 {form}

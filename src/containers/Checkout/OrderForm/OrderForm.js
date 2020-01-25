@@ -11,7 +11,7 @@ class OrderForm extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    placeholder: 'Your Name',
+                    placerholder: 'Your Name',
                     label: 'Name',
                 },
                 value: '',
@@ -25,7 +25,7 @@ class OrderForm extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    placeholder: 'Your Zipcode',
+                    placerholder: 'Your Zipcode',
                     label: 'Zipcode',
                 },
                 value: '',
@@ -42,7 +42,7 @@ class OrderForm extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    placeholder: 'Your Adress',
+                    placerholder: 'Your Adress',
                     label: 'Street',
                 },
                 value: '',
@@ -56,7 +56,7 @@ class OrderForm extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    placeholder: 'Your e-mail',
+                    placerholder: 'Your e-mail',
                     label: 'E-mail',
                 },
                 value: '',
@@ -71,7 +71,7 @@ class OrderForm extends Component {
                 fieldType: 'select',
                 fieldConfig: {
                     type: 'dropdown',
-                    placeholder: '',
+                    placerholder: '',
                     label: 'Delivery Options',
                     options: [
                         {value: 'fastest', displayValue: 'Fastest'},
@@ -184,7 +184,7 @@ class OrderForm extends Component {
         );
 
         return (
-            <div className='OrderForm'>
+            <div>
                 <h4>Enter your contact data</h4>
                 {form}
             </div>

@@ -13,6 +13,7 @@ class SignIn extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
+                    placerholder: 'E-mail adress',
                     label: 'E-mail adress',
                 },
                 value: '',
@@ -26,7 +27,8 @@ class SignIn extends Component {
                 fieldType: 'input',
                 fieldConfig: {
                     type: 'text',
-                    label: 'Password',
+                    placerholder: 'password',
+                    label: 'password',
                 },
                 value: '',
                 rules: {
@@ -138,7 +140,7 @@ class SignIn extends Component {
         }
 
         return (
-            <div className='AuthForm'>
+            <div>
                 {logInRedirect}
                 {errorMessage}
                 {form}
